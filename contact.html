@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Trip - Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Go Trip</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-intro">
+            <h1>Get in Touch with Go Trip</h1>
+            <p>We're here to help you plan your next adventure. Reach out to us with any questions or to start planning your trip today.</p>
+        </section>
+        <section class="contact-details">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> <a href="mailto:info@gotrip.com">info@gotrip.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p><strong>Address:</strong> 123 Travel Lane, Adventure City, Country</p>
+            </div>
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Go Trip. All rights reserved.</p>
+    </footer>
+</body>
+</html>

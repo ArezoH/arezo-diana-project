@@ -88,3 +88,161 @@ body {
         display: flex;
     }
 }
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Intro section styling */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Destinations section styling */
+.destinations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.destination {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+}
+
+.destination-info {
+    padding: 20px;
+}
+
+.destination-info h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.destination-info p {
+    margin-bottom: 10px;
+}
+
+.destination-info ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.destination-info ul li {
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .destinations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination {
+        max-width: 100%;
+    }
+}
+/* Contact intro section */
+.contact-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-intro h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-intro p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Contact form styling */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.contact-form button:active {
+    background-color: #1f6391;
+    transform: translateY(0);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d3d3d3;
+    border-top: 1px solid #ccc;
+    margin-top: 40px;
+}
+
+footer p {
+    color: #555;
+    font-size: 0.9em;
+}

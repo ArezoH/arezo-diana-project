@@ -1,0 +1,77 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #d3d3d3;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Logo styling */
+.logo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #777;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #333;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Hide checkbox input */
+.menu-toggle {
+    display: none;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #d3d3d3;
+        border-top: 1px solid #ccc;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+}
