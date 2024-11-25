@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Trip</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire-animation">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo font-effect-fire-animation">Go Trip</div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="title font-effect-shadow-multiple">Explora Europa</h1>
+            <p class="subtitle">Un viaje por Italia, Francia, Londres, Inglaterra y Suiza</p>
+        </div>
+        <div class="flags">
+            <!-- Bandera Italia -->
+            <label class="flag-wrapper">
+                <input type="checkbox" class="togglee" id="italy">
+                <div class="flag" id="italy-flag"></div>
+                <div class="country-info" id="italy-info">
+                    <img src="/img/italia.jpg" alt="Italia">
+                    <a href="about.html" target="_blank">Leer m&aacute;s</a>
+
+                </div>
+            </label>
+
+            <!-- Bandera Francia -->
+            <label class="flag-wrapper">
+                <input type="checkbox" class="togglee" id="france">
+                <div class="flag" id="france-flag"></div>
+                <div class="country-info" id="france-info">
+                    <img src="img/francia.jpg" alt="Francia">
+                    <a href="about.html" target="_blank">Leer m&aacute;s</a>
+                </div>
+            </label>
+
+            <!-- Bandera Inglaterra -->
+            <label class="flag-wrapper">
+                <input type="checkbox" class="togglee" id="uk">
+                <div class="flag" id="uk-flag"></div>
+                <div class="country-info" id="uk-info">
+                    <img src="img/London.jpg" alt="Inglaterra">
+                    <a href="about.html" target="_blank">Leer m&aacute;s</a>
+
+                </div>
+            </label>
+
+            <!-- Bandera Suiza -->
+            <label class="flag-wrapper">
+                <input type="checkbox" class="togglee" id="switzerland">
+                <div class="flag" id="switzerland-flag"></div>
+                <div class="country-info" id="switzerland-info">
+                    <img src="/img/suiza.jpg" alt="Suiza">
+                    <a href="about.html" target="_blank">Leer m&aacute;s</a>
+
+                </div>
+            </label>
+        </div>
+    </section>
+</body>
+</html>
