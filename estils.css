@@ -168,7 +168,7 @@ header {
 }
 
 #switzerland-flag {
-  background-image: url('img/suizaa.png'); /* Imagen de fondo de la bandera de Suiza */
+  background-image: url('img/suizaa.jpg'); /* Imagen de fondo de la bandera de Suiza */
   background-position: center; /* Centra la imagen */
   background-size: contain; /* Ajusta la imagen para que se contenga dentro del área */
 }
@@ -372,78 +372,6 @@ main {
 .contact-intro p {
     font-size: 1.2em; /* Tamaño del texto del párrafo */
     color: #000000; /* Color del texto */
-}
-
-/* ============================ABOUT====================== */
-*, *::before, *::after {
-  box-sizing: border-box; /* Aplica box-sizing a todos los elementos */
-}
-
-.hero-content .border {
-  z-index: 0; /* No afecta si el elemento padre tiene un contexto diferente */
-}
-
-.border {
-  position: relative; /* Necesario para que los pseudo-elementos (::before y ::after) funcionen */
-  border-radius: 10px; /* Bordes redondeados */
-  overflow: hidden; /* Evita que el contenido se desborde */
-  padding: 2rem; /* Padding interior */
-}
-
-.bordertext {
-  display: flex; /* Usa flexbox para el texto con borde */
-  justify-content: center; /* Centra el contenido */
-  align-items: center; /* Centra verticalmente */
-  color: black; /* Color del texto */
-}
-
-.border::before {
-  content: ''; /* Crea el pseudo-elemento */
-  position: absolute; /* Posiciona el pseudo-elemento de forma absoluta */
-  z-index: -2; /* Coloca el pseudo-elemento detrás de otros elementos */
-  left: -50%; /* Mueve el pseudo-elemento fuera de la vista */
-  top: -50%; /* Mueve el pseudo-elemento fuera de la vista */
-  width: 200%; /* Amplía el tamaño */
-  height: 200%; /* Amplía el tamaño */
-  background-color: #399953; /* Color de fondo */
-  background-repeat: no-repeat; /* Evita que se repita el fondo */
-  background-size: 50% 50%, 50% 50%; /* Define el tamaño del gradiente */
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%; /* Define las posiciones de los gradientes */
-  background-image: 
-      linear-gradient(#399953, #399953), 
-      linear-gradient(#fbb300, #fbb300), 
-      linear-gradient(#d53e33, #d53e33), 
-      linear-gradient(#377af5, #377af5); /* Aplica gradientes de colores */
-  -webkit-animation: rotate 4s linear infinite; /* Animación de rotación para navegadores Webkit */
-  animation: rotate 4s linear infinite; /* Animación de rotación */
-  border-radius: 50%; /* Hace que el efecto sea circular */
-}
-
-
-.border::after {
-  content: ''; /* Crea otro pseudo-elemento */
-  position: absolute; /* Posiciona el pseudo-elemento de forma absoluta */
-  z-index: -1; /* Coloca el pseudo-elemento debajo de otros elementos */
-  left: 6px; /* Posiciona el pseudo-elemento */
-  top: 6px; /* Posiciona el pseudo-elemento */
-  width: calc(100% - 12px); /* Ajusta el tamaño */
-  height: calc(100% - 12px); /* Ajusta el tamaño */
-  background-color: #ffffff; /* Color de fondo */
-  border-radius: 6px; /* Bordes redondeados */
-}
-
-@-webkit-keyframes rotate {
-  100% {
-      -webkit-transform: rotate(1turn); /* Animación de rotación */
-      transform: rotate(1turn); /* Animación de rotación */
-  }
-}
-
-@keyframes rotate {
-  100% {
-      -webkit-transform: rotate(1turn); /* Animación de rotación */
-      transform: rotate(1turn); /* Animación de rotación */
-  }
 }
 
 /* Main content styling */
