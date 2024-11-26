@@ -103,9 +103,11 @@ The project is organized into the following folder structure:
 ### Destinations Page
 ![Destinations Page](img/about.png)
 
-### Stories Page
+### Contact Page
 ![Contact Page](img/contact.png)
 
+###  Responsive
+![responsive Page](img/responsive.png)
 
 ---
 
