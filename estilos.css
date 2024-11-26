@@ -10,124 +10,110 @@
     box-sizing: border-box;
 }
 
+/* Reset básico */
+
+
+/* Estilos generales del body */
 body {
     font-family: 'Libre Baskerville', serif;
     background: var(--bg-gradient);
     color: var(--secondary-color);
 }
 
-/* __________________________HEADER__________________________ */
-
-
 header {
     background-color: #06588f;
     padding: 10px 20px;
   }
-  
-  .navbar {
+
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .logo {
+}
+
+/* Estilo del logo (si aplica) */
+.logo {
     font-size: 34px;
     color: #ffffff;
     font-weight: bold;
   }
-  
-  .nav-links {
-    list-style: none;
+/* Links de navegación */
+.nav-links {
     display: flex;
-  }
-  
-  .nav-links li {
+    list-style: none;
+    gap: 20px;
+}
+.nav-links li {
     margin: 0 35px;
   }
-  
-  .nav-links a {
+
+/* Estilo de los enlaces */
+.nav-links li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 22px;
+    font-weight: 600;
     transition: color 0.3s;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #00bcd4;
 
   }
-  
-  .menu-toggle {
+
+/* Menú Toggle (checkbox escondido) */
+.menu-toggle {
     display: none;
-  }
-  
-  /* Estilos para la animación del menú hamburguesa */
+}
+
+/* Hamburger (icono) */
   .hamburger {
     display: none;
     font-size: 40px;
     color: white;
     cursor: pointer;
   }
-  
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-  
+
+/* Vista responsive: Menú oculto por defecto */
+@media (max-width: 768px) {
     .nav-links {
+        display: none;
+        flex-direction: column;
         position: absolute;
-        top: 70px;
-        right: -100%;
+        top: 60px;
+        left: 0;
         width: 100%;
         background-color: #06588f;
+        padding: 10px 0;
         text-align: center;
-        padding-top: 20px;
-        transition: right 0.3s ease-in-out;
+      
     }
-  
+
+    /* Mostrar enlaces al marcar el checkbox */
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    /* Enlaces centrados y espaciados */
     .nav-links li {
         margin: 15px 0;
     }
-  
-    .nav-links.active {
-        right: 0;
-    }
-  
-    #menu-toggle:checked + .hamburger + .nav-links {
-        right: 0;
-    }
-  }
-  
-  /* Animaciones para la hamburguesa */
-  @keyframes hamburger {
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(90deg);
-    }
-  }
-  
-  #menu-toggle:checked + .hamburger {
-    animation: hamburger 0.3s forwards;
-  }
 
-
-/* _______________________SECTION_________________________ */
-
+    /* Mostrar la hamburguesa */
+    .hamburger {
+        display: block;
+    }
+}
+/* ===========================SECTION INDEX========================== */
 .hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 89vh;
     padding: 20px;
-    position: relative;
     overflow: hidden;
 }
 
@@ -244,7 +230,6 @@ header {
         font-size: 1.5rem;
     }
 
-
     .bordertext{
         font-size: 1.5rem;
     }
@@ -254,6 +239,8 @@ header {
         width: 50px;
         height: 30px;
     }
+
+        
 }
 
 @media (max-width: 480px) {
@@ -283,29 +270,29 @@ header {
 
 
 /* ___________________ABOUT_________________ */
-*, *::before, *::after{
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-.border{
-    position: relative;
-    z-index: 0;
-    /* width: 750px;
-    height: 450px; */
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 2rem;   
+.hero-content .border {
+    z-index: 0; /* Este z-index no tiene efecto si el padre tiene un contexto diferente */
 }
 
-.bordertext{
+.border {
+    position: relative; /* Se necesita para que los pseudo-elementos (::before y ::after) funcionen correctamente */
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.bordertext {
     display: flex;
     justify-content: center;
     align-items: center;
     color: black;
-    
 }
 
-.border::before{
+.border::before {
     content: '';
     position: absolute;
     z-index: -2;
@@ -315,14 +302,19 @@ header {
     height: 200%;
     background-color: #399953;
     background-repeat: no-repeat;
-    background-size: 50% 50%, 50% 50%;
-    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-    background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    background-size: 50% 50%, 50% 50%; /* Tamaño de cada gradiente */
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%; /* Posición de cada gradiente */
+    background-image: 
+        linear-gradient(#399953, #399953), 
+        linear-gradient(#fbb300, #fbb300), 
+        linear-gradient(#d53e33, #d53e33), 
+        linear-gradient(#377af5, #377af5);
     -webkit-animation: rotate 4s linear infinite;
     animation: rotate 4s linear infinite;
+    border-radius: 50%; /* Si se quiere un efecto circular */
 }
 
-.border::after{
+.border::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -331,24 +323,19 @@ header {
     width: calc(100% - 12px);
     height: calc(100% - 12px);
     background-color: #ffffff;
-    border-radius: 6px;
+    border-radius: 6px; /* Debe ser consistente con la estructura del contenedor principal */
 }
 
-
-
-@-webkit-keyframes rotate{
-    100%{
-        -webkit-transform:rotate(1turn);
-        transform:rotate(1turn);
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
     }
 }
 
-@keyframes rotate{
-    100%{
-        -webkit-transform:rotate(1turn);
-        transform:rotate(1turn);
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn);
     }
 }
-
-
-
