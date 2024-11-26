@@ -36,7 +36,7 @@ The project is organized into the following folder structure:
 - A section displaying travel destination blocks with images.
 - Footer with links to social media.
 
-### Articles Page (about.html)
+### About Page (about.html)
 - A list of articles with titles, descriptions, and images.
 - Links to detailed pages for each article.
 
@@ -64,7 +64,7 @@ The project is organized into the following folder structure:
     - Defined color palette, fonts, and image optimizations.
     - Pseudo-classes (`:hover`) and pseudo-elements (`::before`, `::after`) for interactivity.
 
-- **Articles Page (about.html):**
+- **About Page (about.html):**
   - HTML:
     - List of articles with titles, descriptions, and images.
     - Links to detail pages.
@@ -82,7 +82,7 @@ The project is organized into the following folder structure:
     - Adaptive styles matching the overall theme.
     - Pseudo-classes and pseudo-elements for interactive navigation.
 
-- **Stories Page (contact.html):**
+- **Contact Page (contact.html):**
   - HTML:
     - Project information organized with semantic tags.
     - A table for project features or statistics.
@@ -95,28 +95,21 @@ The project is organized into the following folder structure:
 
 ## Screenshots
 ### Homepage
-![Homepage](assets/images/homepage-screenshot.png)
+![Homepage](img/home.png)
 
 ### Articles Page
-![Articles Page](assets/images/articles-page-screenshot.png)
+![About Page](img/about.png)
 
 ### Destinations Page
-![Destinations Page](assets/images/destinations-page-screenshot.png)
+![Destinations Page](img/about.png)
 
 ### Stories Page
-![Stories Page](assets/images/stories-page-screenshot.png)
+![Contact Page](img/contact.png)
 
-*Add your screenshots to the `/assets/images` folder and replace the paths above.*
-
----
-
-## Final Steps
-1. **File Structure:** Ensure all files are logically organized in the project folder.
-2. **Code Review:** Review each other’s code for consistency in comments, structure, and style.
-3. **GitHub Repository:** Upload the project to a public GitHub repository.
-4. **Documentation:** Ensure this README includes all the necessary details for understanding and using the project.
 
 ---
+
+
 
 **Contributors:**
 - **Diana** - HTML and CSS for Homepage and About Page
