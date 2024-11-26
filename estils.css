@@ -479,7 +479,7 @@ main {
 .contact-info {
     background-color: #fff; /* Fondo blanco para la información de contacto */
     border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 10px 20px 10px 20 rgba(0, 0, 0, 0.1); /* Sombra suave */
     padding: 50px; /* Padding interno */
     max-width: 500px; /* Limita el ancho máximo */
     width: 100%; /* Hace que ocupe todo el ancho disponible */

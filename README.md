@@ -1,118 +1,115 @@
-# Travel Website Project
+# Proyecto de Sitio Web de Viajes
 
-## Project Overview
-This project showcases a travel website designed to provide information about destinations, articles, and project features. The site is responsive and optimized for performance across various devices.
+## Descripción General del Proyecto
+Este proyecto presenta un sitio web de viajes diseñado para proporcionar información sobre destinos, artículos y características del proyecto. El sitio es responsive y está optimizado para un rendimiento adecuado en varios dispositivos.
 
-## Table of Contents
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Main Features](#main-features)
-- [Pages and Descriptions](#pages-and-descriptions)
-- [Task Distribution](#task-distribution)
-- [Screenshots](#screenshots)
-
----
-
-## Project Structure
-The project is organized into the following folder structure:
-
-- **HTML Version:** HTML5
-- **CSS Version:** CSS3
-- **Assets:** Optimized images (JPEG for photos) and multimedia files.
+## Tabla de Contenidos
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Características Principales](#características-principales)
+- [Páginas y Descripciones](#páginas-y-descripciones)
+- [Distribución de Tareas](#distribución-de-tareas)
+- [Capturas de Pantalla](#capturas-de-pantalla)
 
 ---
 
-## Technologies Used
-- **HTML5:** For semantic structuring of pages.
-- **CSS3:** For styling and layout, with media queries for responsiveness.
-- **Optimization:** Adaptive layouts and optimized assets for performance.
+## Estructura del Proyecto
+El proyecto está organizado con la siguiente estructura de carpetas:
+
+- **Versión HTML:** HTML5
+- **Versión CSS:** CSS3
+- **Assets:** Imágenes optimizadas (JPEG para fotos) y archivos multimedia.
 
 ---
 
-## Main Features
-### Homepage (index.html)
-- Responsive navigation bar with a hamburger menu for mobile.
-- Featured section introducing popular destinations.
-- A section displaying travel destination blocks with images.
-- Footer with links to social media.
-
-### About Page (about.html)
-- A list of articles with titles, descriptions, and images.
-- Links to detailed pages for each article.
-
-### Destinations Page (destination.html)
-- Detailed information about each destination.
-- Main images for destinations with descriptions.
-- Back link to navigate to the articles page.
-
-### Stories Page (contact.html)
-- Information about the project, structured with semantic HTML.
-- A styled table with project features or statistics.
-- Multimedia elements (e.g., video or audio).
+## Tecnologías Utilizadas
+- **HTML5:** Para la estructuración semántica de las páginas.
+- **CSS3:** Para el diseño y maquetación, con media queries para la adaptabilidad.
+- **Optimización:** Diseños adaptativos y recursos optimizados para un mejor rendimiento.
 
 ---
 
-## Task Distribution
+## Características Principales
+### Página de Inicio (index.html)
+- Barra de navegación responsive con un menú tipo hamburguesa para dispositivos móviles.
+- Sección destacada que introduce destinos populares.
+- Una sección que muestra bloques de destinos de viaje con imágenes.
+- Footer con enlaces a redes sociales.
+
+### Página Sobre Nosotros (about.html)
+- Lista de artículos con títulos, descripciones e imágenes.
+- Enlaces a páginas detalladas para cada artículo.
+
+### Página de Destinos (destination.html)
+- Información detallada sobre cada destino.
+- Imágenes principales de los destinos con descripciones.
+- Enlace para regresar a la página de artículos.
+
+### Página de Historias (contact.html)
+- Información sobre el proyecto, estructurada con HTML semántico.
+- Una tabla estilizada con características o estadísticas del proyecto.
+- Elementos multimedia (por ejemplo, video o audio).
+
+---
+
+## Distribución de Tareas
 ### **Diana**
-- **Homepage (index.html):**
+- **Página de Inicio (index.html):**
   - HTML:
-    - Responsive navigation bar with a hamburger menu.
-    - Featured section for travel destinations.
-    - Destination blocks and footer with social media links.
+    - Barra de navegación responsive con un menú tipo hamburguesa.
+    - Sección destacada para destinos de viaje.
+    - Bloques de destinos y footer con enlaces a redes sociales.
   - CSS:
-    - Adaptive styles with media queries.
-    - Defined color palette, fonts, and image optimizations.
-    - Pseudo-classes (`:hover`) and pseudo-elements (`::before`, `::after`) for interactivity.
+    - Estilos adaptativos con media queries.
+    - Paleta de colores definida, fuentes e imágenes optimizadas.
+    - Pseudo-clases (`:hover`) y pseudo-elementos (`::before`, `::after`) para interactividad.
 
-- **About Page (about.html):**
+- **Página Sobre Nosotros (about.html):**
   - HTML:
-    - List of articles with titles, descriptions, and images.
-    - Links to detail pages.
+    - Lista de artículos con títulos, descripciones e imágenes.
+    - Enlaces a páginas detalladas.
   - CSS:
-    - Responsive layouts with relative units.
-    - Typography and optimized images for accessibility.
+    - Diseños responsivos con unidades relativas.
+    - Tipografía e imágenes optimizadas para accesibilidad.
 
 ### **Arezo**
-- **Destinations Page (destination.html):**
+- **Página de Destinos (destination.html):**
   - HTML:
-    - Main image for each destination.
-    - Title, author, and long description for each destination.
-    - Back link to articles page.
+    - Imagen principal para cada destino.
+    - Título, autor y descripción extensa de cada destino.
+    - Enlace para regresar a la página de artículos.
   - CSS:
-    - Adaptive styles matching the overall theme.
-    - Pseudo-classes and pseudo-elements for interactive navigation.
+    - Estilos adaptativos que coinciden con el tema general.
+    - Pseudo-clases y pseudo-elementos para navegación interactiva.
 
-- **Contact Page (contact.html):**
+- **Página de Contacto (contact.html):**
   - HTML:
-    - Project information organized with semantic tags.
-    - A table for project features or statistics.
-    - Multimedia elements like video or audio.
+    - Información del proyecto organizada con etiquetas semánticas.
+    - Una tabla con características o estadísticas del proyecto.
+    - Elementos multimedia como video o audio.
   - CSS:
-    - Cohesive styling with fluid design.
-    - Media queries for legibility across devices.
+    - Estilos cohesivos con un diseño fluido.
+    - Media queries para legibilidad en diferentes dispositivos.
 
 ---
 
-## Screenshots
-### Homepage
-![Homepage](img/home.png)
+## Capturas de Pantalla
+### Página de Inicio
+![Página de Inicio](img/home.png)
 
-### Articles Page
-![About Page](img/about.png)
+### Página de Artículos
+![Página Sobre Nosotros](img/about.png)
 
-### Destinations Page
-![Destinations Page](img/about.png)
+### Página de Destinos
+![Página de Destinos](img/about.png)
 
-### Contact Page
-![Contact Page](img/contact.png)
+### Página de Contacto
+![Página de Contacto](img/contact.png)
 
-###  Responsive
-![responsive Page](img/responsive.png)
-
+### Responsive
+![Página Responsive](img/responsive.png)
 ---
 
-
-
-**Contributors:**
-- **Diana** - HTML and CSS for Homepage and About Page
-- **Arezo** - HTML and CSS for Contact Page, destination Page, and Documentation
+**Colaboradores:**
+- **Diana** - HTML y CSS para la Página de Inicio y Sobre Nosotros
+- **Arezo** - HTML y CSS para la Página de Contacto, Página de Destinos y Documentación
