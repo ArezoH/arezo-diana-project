@@ -1,558 +1,544 @@
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Elimina el margen por defecto de todos los elementos */
+  padding: 0; /* Elimina el padding por defecto de todos los elementos */
+  box-sizing: border-box; /* Hace que el padding y el borde se incluyan en las dimensiones de los elementos */
 }
 
 /* Estilos generales del body */
-
 body{
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif; /* Define la tipografía del cuerpo */
 }
 
 header {
-  background-color: #06588f;
-  padding: 10px 20px;
+  background-color: #06588f; /* Color de fondo del encabezado */
+  padding: 10px 20px; /* Espaciado interior del encabezado */
 }
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 99;
+  display: flex; /* Usa flexbox para el diseño de la barra de navegación */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  z-index: 99; /* Establece la prioridad de apilamiento */
 }
 
 /* Estilo del logo (si aplica) */
 .logo {
-  font-size: 34px;
-  color: #ffffff;
-  font-weight: bold;
+  font-size: 34px; /* Tamaño de la fuente del logo */
+  color: #ffffff; /* Color del logo */
+  font-weight: bold; /* Establece el peso de la fuente como negrita */
 }
 
 .logo a{
-  font-size: 34px;
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
+  font-size: 34px; /* Tamaño de la fuente del enlace */
+  color: #ffffff; /* Color del enlace */
+  font-weight: bold; /* Peso de la fuente en negrita */
+  text-decoration: none; /* Elimina el subrayado del enlace */
 }
+
 /* Links de navegación */
 .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+  display: flex; /* Usa flexbox para los enlaces de navegación */
+  list-style: none; /* Elimina los puntos de lista */
+  gap: 20px; /* Espaciado entre los enlaces */
 }
 .nav-links li {
-  margin: 0 35px;
+  margin: 0 35px; /* Márgenes laterales de los elementos de la lista */
 }
 
 /* Estilo de los enlaces */
 .nav-links li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 600;
-  transition: color 0.3s;
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #ffffff; /* Color de los enlaces */
+  font-size: 22px; /* Tamaño de la fuente de los enlaces */
+  font-weight: 600; /* Peso de la fuente */
+  transition: color 0.3s; /* Transición suave para el cambio de color */
 }
 
 .nav-links a:hover {
-  color: #f8f27f;
-
+  color: #f8f27f; /* Color de los enlaces cuando se pasa el mouse sobre ellos */
 }
 
 /* Menú Toggle (checkbox escondido) */
 .menu-toggle {
-  display: none;
+  display: none; /* Oculta el checkbox del menú */
 }
 
 /* Hamburger (icono) */
 .hamburger {
-  display: none;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
+  display: none; /* Oculta el icono de la hamburguesa */
+  font-size: 40px; /* Tamaño del icono de la hamburguesa */
+  color: white; /* Color del icono */
+  cursor: pointer; /* Establece el cursor como puntero */
 }
 
 /* Vista responsive: Menú oculto por defecto */
 @media (max-width: 768px) {
   .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #06588f;
-      z-index: 999;
-      padding: 10px 0;
-      text-align: center;
-    
+    display: none; /* Oculta los enlaces de navegación */
+    flex-direction: column; /* Los enlaces se apilan verticalmente */
+    position: absolute; /* Posiciona el menú de forma absoluta */
+    top: 60px; /* Coloca el menú debajo del encabezado */
+    left: 0; /* Alinea el menú al borde izquierdo */
+    width: 100%; /* Hace que el menú ocupe todo el ancho */
+    background-color: #06588f; /* Fondo azul del menú */
+    z-index: 999; /* Establece la prioridad de apilamiento */
+    padding: 10px 0; /* Espaciado interno vertical */
+    text-align: center; /* Centra los enlaces dentro del menú */
   }
 
   /* Mostrar enlaces al marcar el checkbox */
   .menu-toggle:checked ~ .nav-links {
-      display: flex;
+    display: flex; /* Muestra los enlaces cuando el checkbox está marcado */
   }
 
   /* Enlaces centrados y espaciados */
   .nav-links li {
-      margin: 15px 0;
+    margin: 15px 0; /* Márgenes verticales entre los enlaces */
   }
 
   /* Mostrar la hamburguesa */
   .hamburger {
-      display: block;
+    display: block; /* Muestra el icono de la hamburguesa */
   }
 }
 
-
 /* =================SECTION INDEX================= */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 89vh;
-  padding: 20px;
-  overflow: hidden;
+  display: flex; /* Usa flexbox para el contenido de la sección */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  justify-content: center; /* Centra los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  height: 89vh; /* Altura de la sección basada en el 89% del alto de la ventana */
+  padding: 20px; /* Espaciado interno */
+  overflow: hidden; /* Oculta cualquier contenido desbordante */
 }
 
 .title {
-  font-size: 9rem;
-  font-weight: bold;
-  font-family:  "Sofia", sans-serif;
-  margin-bottom: 50px;
-  color: #000000;
+  font-size: 9rem; /* Tamaño grande de la fuente */
+  font-weight: bold; /* Peso de la fuente en negrita */
+  font-family: "Sofia", sans-serif; /* Fuente personalizada */
+  margin-bottom: 50px; /* Margen inferior */
+  color: #000000; /* Color del texto */
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
+  font-size: 1.5rem; /* Tamaño de la fuente para el subtítulo */
+  margin-bottom: 30px; /* Margen inferior */
 }
 
 .flags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin-top: 20px;
+  display: flex; /* Usa flexbox para mostrar las banderas */
+  flex-wrap: wrap; /* Permite que las banderas se ajusten a varias filas */
+  gap: 25px; /* Espacio entre las banderas */
+  margin-top: 20px; /* Margen superior */
 }
 
 .flag-wrapper {
-  position: relative;
+  position: relative; /* Posiciona las banderas de manera relativa */
 }
 
 .flag {
-  width: 70px;
-  height: 50px;
-  background-size: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+  width: 70px; /* Ancho de cada bandera */
+  height: 50px; /* Alto de cada bandera */
+  background-size: cover; /* Cubre todo el área de la bandera */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para transformaciones y sombras */
+  cursor: pointer; /* Cambia el cursor a puntero */
 }
 
 .flag:hover {
-  transform: scale(1.6);
-  box-shadow: 0 4px 15px rgb(255, 255, 255);
+  transform: scale(1.6); /* Aumenta el tamaño de la bandera al pasar el mouse */
+  box-shadow: 0 4px 15px rgb(255, 255, 255); /* Sombra blanca cuando se pasa el mouse */
 }
 
 #italy-flag {
-  background-image: linear-gradient(to bottom, #009246 33.33%, #ffffff 33.33%, #ffffff 66.66%, #ce2b37 66.66%);
+  background-image: linear-gradient(to bottom, #009246 33.33%, #ffffff 33.33%, #ffffff 66.66%, #ce2b37 66.66%); /* Fondo con el gradiente de la bandera de Italia */
 }
 
 #france-flag {
-  background-image: linear-gradient(to bottom, #0055A4 33.33%, #ffffff 33.33%, #ffffff 66.66%, #ff1100 66.66%);
+  background-image: linear-gradient(to bottom, #0055A4 33.33%, #ffffff 33.33%, #ffffff 66.66%, #ff1100 66.66%); /* Fondo con el gradiente de la bandera de Francia */
 }
 
 #uk-flag {
-  background-image: url('img/uk.jpg');
-  background-position: center;
-  background-size: contain;
+  background-image: url('img/uk.jpg'); /* Imagen de fondo de la bandera del Reino Unido */
+  background-position: center; /* Centra la imagen */
+  background-size: contain; /* Ajusta la imagen para que se contenga dentro del área */
 }
 
 #switzerland-flag {
-  background-image: url('img/suizaa.png');
-  background-position: center;
-  background-size: contain;
+  background-image: url('img/suizaa.png'); /* Imagen de fondo de la bandera de Suiza */
+  background-position: center; /* Centra la imagen */
+  background-size: contain; /* Ajusta la imagen para que se contenga dentro del área */
 }
 
 /* Country Info (Image Display) */
 .country-info {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(244, 241, 241, 0.8);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-  z-index: 10;
-
+  position: fixed; /* Posiciona el contenedor de la información del país de manera fija */
+  top: 0; /* Coloca el contenedor en la parte superior */
+  left: 0; /* Coloca el contenedor en la parte izquierda */
+  width: 100vw; /* Ancho de toda la ventana */
+  height: 100vh; /* Alto de toda la ventana */
+  display: flex; /* Usa flexbox para centrar los elementos dentro del contenedor */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  background: rgba(244, 241, 241, 0.8); /* Fondo semitransparente */
+  opacity: 0; /* Inicialmente invisible */
+  pointer-events: none; /* Desactiva los eventos de puntero */
+  transition: opacity 0.3s ease; /* Transición suave para la visibilidad */
+  z-index: 10; /* Asegura que esté encima de otros elementos */
 }
 
 /* ______________link country info________________ */
 .country-info a:link, a:visited {
-  background-color: #000000;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  background-color: #000000; /* Fondo negro para el enlace */
+  color: white; /* Color blanco para el texto */
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+  text-decoration: none; /* Elimina el subrayado */
+  display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
 }
 .country-info img {
-  max-width: 80%;
-  max-height: 90%;
-  border-radius: 75px;
-  box-shadow: 20px 12px 9px rgb(0, 0, 0);
+  max-width: 80%; /* Ancho máximo de la imagen */
+  max-height: 80%; /* Alto máximo de la imagen */
 }
+
+.country-info .flag-wrapper {
+  display: none; /* Oculta las banderas cuando se muestra la información del país */
+}
+
 
 /* Checkbox Hidden */
 .togglee {
-  display: none;
+  display: none; /* Oculta el checkbox */
 }
 
 /* Show Country Info */
 .togglee:checked + .flag + .country-info {
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 1; /* Muestra la información del país cuando el checkbox está marcado */
+  pointer-events: auto; /* Habilita los eventos de puntero */
 }
 
 /* Responsiveness */
 @media (max-width: 768px) {
   .title {
-      font-size: 7rem;
+      font-size: 7rem; /* Reduce el tamaño de la fuente del título en pantallas más pequeñas */
   }
 
   .subtitle {
-      font-size: 1.5rem;
+      font-size: 1.5rem; /* Ajusta el tamaño de la fuente del subtítulo */
   }
 
-  .bordertext{
-      font-size: 1.5rem;
+  .bordertext {
+      font-size: 1.5rem; /* Ajusta el tamaño de la fuente para el texto con borde */
   }
-
 
   .flag {
-      width: 50px;
-      height: 30px;
+      width: 50px; /* Redimensiona el tamaño de las banderas */
+      height: 30px; /* Ajusta la altura de las banderas */
   }
-
-      
 }
 
 @media (max-width: 480px) {
-  .title{
-      font-size: 5rem;
+  .title {
+      font-size: 5rem; /* Ajusta aún más el tamaño del título en pantallas muy pequeñas */
   }
   
   .flags {
-      flex-wrap: wrap;
-      gap: 10px;
+      flex-wrap: wrap; /* Permite que las banderas se envuelvan en varias líneas */
+      gap: 10px; /* Ajusta el espacio entre las banderas */
   }
-  .bordertext{
-      font-size: 1.2rem;
+  .bordertext {
+      font-size: 1.2rem; /* Reduce el tamaño del texto con borde */
   }
 
-  .border{
-      width: 50px;
-      height: 20px;
-      
-      }
+  .border {
+      width: 50px; /* Ajusta el tamaño del borde */
+      height: 20px; /* Ajusta la altura del borde */
+  }
 
   .flag {
-      width: 40px;
-      height: 25px;
+      width: 40px; /* Redimensiona las banderas a un tamaño más pequeño */
+      height: 25px; /* Ajusta la altura de las banderas */
   }
 }
 
 /*=========== Destinations section styling========= */
 .destinations {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    display: flex; /* Usa flexbox para las secciones de destinos */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    gap: 20px; /* Añade espacio entre los elementos */
+    justify-content: center; /* Centra los elementos en el contenedor */
 }
 
 .destination {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    background-color: #fff; /* Fondo blanco para los destinos */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para los destinos */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    max-width: 600px; /* Limita el ancho máximo del destino */
+    width: 100%; /* Hace que el destino ocupe todo el ancho disponible */
+    display: flex; /* Usa flexbox para organizar el contenido del destino */
+    flex-direction: column; /* Organiza los elementos del destino en una columna */
 }
 
-.destination:hover{
-  background-image: linear-gradient(to right top, #089cf2, #f9cd5c, #f9cd5c, #089cf2, #00a2ff);
-  transition: all 0.5s;
+.destination:hover {
+  background-image: linear-gradient(to right top, #089cf2, #f9cd5c, #f9cd5c, #089cf2, #00a2ff); /* Cambia el fondo al pasar el mouse */
+  transition: all 0.5s; /* Añade transición suave al cambio de fondo */
 }
 
 .destination img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho del destino */
+    height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
 }
 
 .destination-info {
-    padding: 20px;
+    padding: 20px; /* Añade espaciado interior a la información del destino */
 }
 
 .destination-info h2 {
-    color: #2c3e50;
-    margin-bottom: 10px;
+    color: #2c3e50; /* Establece el color del título de la información */
+    margin-bottom: 10px; /* Añade margen debajo del título */
 }
 
 .destination-info p {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Añade margen debajo de los párrafos */
 }
 
 .destination-info ul {
-    list-style: disc;
-    padding-left: 20px;
+    list-style: disc; /* Establece los elementos de la lista con puntos */
+    padding-left: 20px; /* Añade espaciado a la izquierda de la lista */
 }
 
 .destination-info ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Añade margen inferior a cada elemento de la lista */
 }
 
-
+/* Botón de flecha hacia arriba */
 .flecha-arriba {
-  position: fixed;
-  bottom: 30px;
-  right: 20px;
-  font-size: 30px;
-  background-color: #000000;
-  /* color: rgb(0, 0, 0); */
-  padding: 15px;
-  border-radius: 70%;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 0.3s ease;
+  position: fixed; /* Fija la posición de la flecha */
+  bottom: 30px; /* Coloca la flecha a 30px desde la parte inferior */
+  right: 20px; /* Coloca la flecha a 20px desde la derecha */
+  font-size: 30px; /* Tamaño del ícono de la flecha */
+  background-color: #000000; /* Fondo negro para la flecha */
+  padding: 15px; /* Añade padding alrededor de la flecha */
+  border-radius: 70%; /* Hace la flecha circular */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  display: flex; /* Usa flexbox para centrar la flecha */
+  justify-content: center; /* Centra la flecha horizontalmente */
+  align-items: center; /* Centra la flecha verticalmente */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de fondo */
 }
 
 .flecha-arriba:hover {
-  background-color: #ffc800;
+  background-color: #ffc800; /* Cambia el color de fondo cuando se pasa el mouse */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .destinations {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Apila los destinos verticalmente en pantallas más pequeñas */
+        align-items: center; /* Centra los destinos */
     }
 
     .destination {
-        max-width: 100%;
+        max-width: 100%; /* Hace que los destinos ocupen todo el ancho disponible */
     }
-    .flecha-arriba{
-      font-size: 20px;
+    .flecha-arriba {
+      font-size: 20px; /* Reduce el tamaño del ícono de la flecha en pantallas más pequeñas */
     }
 }
+
 /* Main content styling */
 main {
-    /* padding: 50px; */
-    height: 100vh;
+    padding: 20px; /* Añade padding al contenido principal */
 }
 
 /* Contact intro section */
 .contact-intro {
-    text-align: center;
-    margin-bottom: 100px;
+    text-align: center; /* Centra el texto de la sección de introducción */
+    margin-bottom: 100px; /* Añade margen inferior */
 }
 
 .contact-intro h1 {
-    font-size: 2.5em;
-    color: #000000;
-    margin-bottom: 30px;
+    font-size: 2.5em; /* Tamaño del título */
+    color: #000000; /* Color del título */
+    margin-bottom: 30px; /* Añade margen debajo del título */
 }
 
 .contact-intro p {
-    font-size: 1.2em;
-    color: #000000;
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    color: #000000; /* Color del texto */
 }
-
 
 /* ============================ABOUT====================== */
 *, *::before, *::after {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Aplica box-sizing a todos los elementos */
 }
 
 .hero-content .border {
-  z-index: 0; /* Este z-index no tiene efecto si el padre tiene un contexto diferente */
+  z-index: 0; /* No afecta si el elemento padre tiene un contexto diferente */
 }
 
 .border {
-  position: relative; /* Se necesita para que los pseudo-elementos (::before y ::after) funcionen correctamente */
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 2rem;
+  position: relative; /* Necesario para que los pseudo-elementos (::before y ::after) funcionen */
+  border-radius: 10px; /* Bordes redondeados */
+  overflow: hidden; /* Evita que el contenido se desborde */
+  padding: 2rem; /* Padding interior */
 }
 
 .bordertext {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
+  display: flex; /* Usa flexbox para el texto con borde */
+  justify-content: center; /* Centra el contenido */
+  align-items: center; /* Centra verticalmente */
+  color: black; /* Color del texto */
 }
 
 .border::before {
-  content: '';
-  position: absolute;
-  z-index: -2;
-  left: -50%;
-  top: -50%;
-  width: 200%;
-  height: 200%;
-  background-color: #399953;
-  background-repeat: no-repeat;
-  background-size: 50% 50%, 50% 50%; /* Tamaño de cada gradiente */
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%; /* Posición de cada gradiente */
+  content: ''; /* Crea el pseudo-elemento */
+  position: absolute; /* Posiciona el pseudo-elemento de forma absoluta */
+  z-index: -2; /* Coloca el pseudo-elemento detrás de otros elementos */
+  left: -50%; /* Mueve el pseudo-elemento fuera de la vista */
+  top: -50%; /* Mueve el pseudo-elemento fuera de la vista */
+  width: 200%; /* Amplía el tamaño */
+  height: 200%; /* Amplía el tamaño */
+  background-color: #399953; /* Color de fondo */
+  background-repeat: no-repeat; /* Evita que se repita el fondo */
+  background-size: 50% 50%, 50% 50%; /* Define el tamaño del gradiente */
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%; /* Define las posiciones de los gradientes */
   background-image: 
       linear-gradient(#399953, #399953), 
       linear-gradient(#fbb300, #fbb300), 
       linear-gradient(#d53e33, #d53e33), 
-      linear-gradient(#377af5, #377af5);
-  -webkit-animation: rotate 4s linear infinite;
-  animation: rotate 4s linear infinite;
-  border-radius: 50%; /* Si se quiere un efecto circular */
+      linear-gradient(#377af5, #377af5); /* Aplica gradientes de colores */
+  -webkit-animation: rotate 4s linear infinite; /* Animación de rotación para navegadores Webkit */
+  animation: rotate 4s linear infinite; /* Animación de rotación */
+  border-radius: 50%; /* Hace que el efecto sea circular */
 }
 
+
 .border::after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  left: 6px;
-  top: 6px;
-  width: calc(100% - 12px);
-  height: calc(100% - 12px);
-  background-color: #ffffff;
-  border-radius: 6px; /* Debe ser consistente con la estructura del contenedor principal */
+  content: ''; /* Crea otro pseudo-elemento */
+  position: absolute; /* Posiciona el pseudo-elemento de forma absoluta */
+  z-index: -1; /* Coloca el pseudo-elemento debajo de otros elementos */
+  left: 6px; /* Posiciona el pseudo-elemento */
+  top: 6px; /* Posiciona el pseudo-elemento */
+  width: calc(100% - 12px); /* Ajusta el tamaño */
+  height: calc(100% - 12px); /* Ajusta el tamaño */
+  background-color: #ffffff; /* Color de fondo */
+  border-radius: 6px; /* Bordes redondeados */
 }
 
 @-webkit-keyframes rotate {
   100% {
-      -webkit-transform: rotate(1turn);
-      transform: rotate(1turn);
+      -webkit-transform: rotate(1turn); /* Animación de rotación */
+      transform: rotate(1turn); /* Animación de rotación */
   }
 }
 
 @keyframes rotate {
   100% {
-      -webkit-transform: rotate(1turn);
-      transform: rotate(1turn);
+      -webkit-transform: rotate(1turn); /* Animación de rotación */
+      transform: rotate(1turn); /* Animación de rotación */
   }
 }
 
-
 /* Main content styling */
 main {
-    padding: 20px;
+    padding: 20px; /* Añade padding al contenido principal */
 }
 
 /* Intro section styling */
 .intro {
-    text-align: center;
-    margin-bottom: 40px;
+    text-align: center; /* Centra el texto */
+    margin-bottom: 40px; /* Añade margen inferior */
 }
 
 .intro h1 {
-    font-size: 2.5em;
-    color: #000000;
-    margin-bottom: 10px;
+    font-size: 2.5em; /* Tamaño del título */
+    color: #000000; /* Color del título */
+    margin-bottom: 10px; /* Añade margen debajo del título */
 }
 
 .intro p {
-    font-size: 1.2em;
-    color: #555;
+    font-size: 1.2em; /* Tamaño del texto */
+    color: #555; /* Color del texto */
 }
-
 
 /* ==========Contact details section ===========*/
 .contact-details {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    display: flex; /* Usa flexbox para los detalles de contacto */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
+    gap: 20px; /* Añade espacio entre los elementos */
+    justify-content: center; /* Centra los elementos */
 }
 
 .contact-info {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
-    padding:50px;
-    max-width: 500px;
-    width: 100%;
+    background-color: #fff; /* Fondo blanco para la información de contacto */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 50px; /* Padding interno */
+    max-width: 500px; /* Limita el ancho máximo */
+    width: 100%; /* Hace que ocupe todo el ancho disponible */
 }
 
 .contact-info h2 {
-    color: #000000;
-    margin-bottom: 10px;
+    color: #000000; /* Color del título de la información */
+    margin-bottom: 10px; /* Añade margen debajo del título */
 }
 
 .contact-info p {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Añade margen debajo del párrafo */
 }
 
 .contact-info a {
-    color: #06588f;
-    text-decoration: none;
+    color: #06588f; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Añade subrayado al pasar el ratón */
 }
 
 /* ============Footer styling============= */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #06588f;
-    /* margin-top: 40px; */
-}
-footer .social-media{
-  position: relative;
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  /* max-height: 15vh; */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Padding interior */
+    background-color: #06588f; /* Fondo azul para el pie de página */
 }
 
-footer .social-media a{
-  position: relative;
-  text-decoration: none;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 50%;
-  border: 3px solid rgb(5, 5, 5);
-  margin: 10px 5px;
-  cursor: pointer;
- 
+footer .social-media {
+  position: relative; /* Posiciona los elementos de la lista de redes sociales */
+  display: flex; /* Usa flexbox */
+  list-style: none; /* Elimina los puntos de la lista */
+  gap: 20px; /* Añade espacio entre los elementos */
+  justify-content: center; /* Centra los elementos */
+  align-items: center; /* Centra los elementos verticalmente */
 }
 
-footer .social-media a:hover{
-  color: rgb(255, 179, 0);
-  box-shadow: 0 0 15px rgb(229, 255, 0);
-  transition: all 0.5s ease;
+footer .social-media a {
+  position: relative; /* Posiciona los enlaces */
+  text-decoration: none; /* Elimina el subrayado */
+  width: 40px; /* Ajusta el tamaño */
+  height: 40px; /* Ajusta el tamaño */
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centra el contenido */
+  align-items: center; /* Centra el contenido verticalmente */
+  background: #fff; /* Fondo blanco */
+  border-radius: 50%; /* Hace los botones circulares */
+  border: 3px solid rgb(5, 5, 5); /* Bordes alrededor de los botones */
+  margin: 10px 5px; /* Espaciado entre los botones */
+  cursor: pointer; /* Cambia el cursor a puntero */
+}
 
+footer .social-media a:hover {
+  color: rgb(255, 179, 0); /* Cambia el color al pasar el mouse */
+  box-shadow: 0 0 15px rgb(229, 255, 0); /* Añade sombra */
+  transition: all 0.5s ease; /* Transición suave */
 }
 
 footer p {
-    color: #000000;
-    font-size: 0.9em;
+    color: #000000; /* Color del texto en el pie de página */
+    font-size: 0.9em; /* Tamaño de la fuente */
 }
-
-/* =================================== */
