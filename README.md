@@ -101,10 +101,10 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 ![Página Sobre Nosotros](img/about.jpg)
 
 ### Página de Destinos
-![Página de Destinos](img/about.png)
+![Página de Destinos](img/destination.png)
 
 ### Página de Contacto
-![Página de Contacto](img/destination.png)
+![Página de Contacto](img/contact.png)
 
 ### Responsive
 ![Página Responsive](img/responsive.png)
