@@ -70,7 +70,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Enlaces a páginas detalladas.
   - CSS:
     - Diseños responsivos con unidades relativas.
-    - Tipografía e imágenes optimizadas para accesibilidad.
+    - Tipografía, video e imágenes optimizadas para accesibilidad.
 
 ### **Arezo**
 - **Página de Destinos (destination.html):**
@@ -101,7 +101,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 ![Página Sobre Nosotros](img/about.png)
 
 ### Página de Destinos
-![Página de Destinos](img/about.png)
+![Página de Destinos](img/about.jpg)
 
 ### Página de Contacto
 ![Página de Contacto](img/contact.png)
