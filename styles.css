@@ -202,6 +202,8 @@ header {
 .country-info img {
   max-width: 80%; /* Ancho máximo de la imagen */
   max-height: 80%; /* Alto máximo de la imagen */
+  border-radius: 75px; /*Borde de la imagen*/
+  box-shadow: 20px 12px 9px rgb(0, 0, 0); /*efectos sombra alrededor del marco*/
 }
 
 .country-info .flag-wrapper {
@@ -322,13 +324,13 @@ header {
   right: 20px; /* Coloca la flecha a 20px desde la derecha */
   font-size: 30px; /* Tamaño del ícono de la flecha */
   background-color: #000000; /* Fondo negro para la flecha */
-  padding: 15px; /* Añade padding alrededor de la flecha */
-  border-radius: 70%; /* Hace la flecha circular */
+  padding: 10px; /* Ajusta el padding para mantener el círculo más pequeño */
+  border-radius: 20%; /* Hace la flecha circular (circunferencia perfecta) */
   text-decoration: none; /* Elimina el subrayado del enlace */
   display: flex; /* Usa flexbox para centrar la flecha */
   justify-content: center; /* Centra la flecha horizontalmente */
   align-items: center; /* Centra la flecha verticalmente */
-  transition: background-color 0.3s ease; /* Transición suave para el cambio de fondo */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de fondo */  
 }
 
 .flecha-arriba:hover {
