@@ -66,11 +66,11 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 
 - **Página Sobre Nosotros (about.html):**
   - HTML:
-    - Lista de artículos con títulos, descripciones e imágenes.
+    - Lista de artículos con títulos, descripciones.
     - Enlaces a páginas detalladas.
   - CSS:
     - Diseños responsivos con unidades relativas.
-    - Tipografía, video e imágenes optimizadas para accesibilidad.
+    - Tipografía, video optimizadas para accesibilidad.
 
 ### **Arezo**
 - **Página de Destinos (destination.html):**
