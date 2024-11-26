@@ -98,13 +98,13 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 ![Página de Inicio](img/home.png)
 
 ### Página de Artículos
-![Página Sobre Nosotros](img/about.png)
+![Página Sobre Nosotros](img/about.jpg)
 
 ### Página de Destinos
-![Página de Destinos](img/about.jpg)
+![Página de Destinos](img/about.png)
 
 ### Página de Contacto
-![Página de Contacto](img/contact.png)
+![Página de Contacto](img/destination.png)
 
 ### Responsive
 ![Página Responsive](img/responsive.png)
