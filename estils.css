@@ -613,8 +613,6 @@ input:focus::placeholder, textarea:focus::placeholder {
 .border{
   position: relative;
   z-index: 0;
-  /* width: 750px;
-  height: 450px; */
   border-radius: 10px;
   overflow: hidden;
   padding: 2rem;   
