@@ -403,7 +403,11 @@ main {
     gap: 20px; /* Añade espacio entre los elementos */
     justify-content: center; /* Centra los elementos */
 }
-
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contact-info {
     background-color: #fff; /* Fondo blanco para la información de contacto */
     border-radius: 8px; /* Bordes redondeados */
