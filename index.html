@@ -23,6 +23,42 @@
             color: var(--secondary-color);
           }
 
+          footer {
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+          }
+
+          .subscription-form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .subscription-form input[type="email"] {
+            padding: 10px;
+            margin:10px;
+            width: 500px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+          }
+
+          .subscription-form button {
+            padding: 10px 20px;
+            margin:10px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            margin:10px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+
+          .subscription-form button:hover {
+            background-color: #3e8e41;
+          }
     </style>
 </head>
 
@@ -59,7 +95,7 @@
                     <input type="checkbox" class="togglee" id="switzerland">
                     <div class="flag" id="switzerland-flag"></div>
                     <div class="country-info" id="switzerland-info">
-                        <img src="/img/suiza.jpg" alt="Suiza">
+                        <img src="img/suizaa.jpg" alt="Suiza">
                         <a href="destinations.html" target="_blank">Leer m&aacute;s</a>
     
                     </div>
@@ -91,12 +127,24 @@
                 <input type="checkbox" class="togglee" id="italy">
                 <div class="flag" id="italy-flag"></div>
                 <div class="country-info" id="italy-info">
-                    <img src="/img/italia.jpg" alt="Italia">
+                    <img src="img/italia.jpg" alt="Italia">
                     <a href="destinations.html" target="_blank" >Leer m&aacute;s</a>
 
                 </div>
             </label>
         </div>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Go Trip. Todos los derechos reservados.</p>
+        <div class="subscription-form">
+            <h3>Suscr&iacute;bete a nuestro bolet&iacute;n</h3>
+            <form action="#" method="post" class="subscription-form">
+                <input type="email" name="email" placeholder="Ingresa tu correo electr&oacute;nico" required>
+                <div> <input type="checkbox" name="agree" required> Acepto los t&eacute;rminos y condiciones</div>
+                <button type="submit" formaction="/index">Suscribirse</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
