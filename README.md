@@ -71,7 +71,16 @@ El proyecto está organizado con la siguiente estructura de carpetas:
   - CSS:
     - Diseños responsivos con unidades relativas.
     - Tipografía, video optimizadas para accesibilidad.
+- **Página de Contacto (contact.html):**
+  - **HTML:**
+    - Investigar y diseñar la estructura HTML para un formulario de contacto.
+    - Garantizar una mejor experiencia de usuario incorporando redirección después del envío del formulario
+  - **CSS:**
+    - Diseño agradable e intuitivo con:
+    - Colores suaves y combinaciones contrastantes.
+    
 
+ 
 ### **Arezo**
 - **Página de Destinos (destination.html):**
   - HTML:
@@ -91,6 +100,15 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Estilos cohesivos con un diseño fluido.
     - Media queries para legibilidad en diferentes dispositivos.
 
+- **Página de incio(index.html):**
+  - HTML:
+    - Crear un formulario de suscripción con una casilla para aceptar los términos de privacidad y política.
+  - CSS:
+    - Diseñarlo y adaptar los colores para mantener la coherencia en el diseño.
+  - Markdown:
+    - Actualizar documentacion.
+   
+
 ---
 
 ## Capturas de Pantalla
@@ -108,6 +126,12 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 
 ### Responsive
 ![Página Responsive](img/responsive.png)
+
+### Formulario contacto
+![Página Contacto](img/contacto.png)
+
+### Formulario de subscripción
+![Página incio](img/Subscription.png)
 ---
 
 **Colaboradores:**
