@@ -91,7 +91,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Estilos adaptativos que coinciden con el tema general.
     - Pseudo-clases y pseudo-elementos para navegación interactiva.
 
-- **Página de Contacto (contact.html):**
+- **Formulario de contacto(contact.html):**
   - HTML:
     - Información del proyecto organizada con etiquetas semánticas.
     - Una tabla con características o estadísticas del proyecto.
@@ -100,7 +100,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Estilos cohesivos con un diseño fluido.
     - Media queries para legibilidad en diferentes dispositivos.
 
-- **Página de incio(index.html):**
+- **Formulario de suscripción(index.html):**
   - HTML:
     - Crear un formulario de suscripción con una casilla para aceptar los términos de privacidad y política.
   - CSS:
