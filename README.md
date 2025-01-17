@@ -100,7 +100,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Estilos cohesivos con un diseño fluido.
     - Media queries para legibilidad en diferentes dispositivos.
 
-- *** Formulario suscripción(index.html):**
+- **Formulario suscripción(index.html):**
   - HTML:
     - Crear un formulario de suscripción con una casilla para aceptar los términos de privacidad y política.
   - CSS:
