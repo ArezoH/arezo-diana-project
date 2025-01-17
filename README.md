@@ -71,7 +71,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
   - CSS:
     - Diseños responsivos con unidades relativas.
     - Tipografía, video optimizadas para accesibilidad.
-- **Página de Contacto (contact.html):**
+- **Formulario de Contacto(contact.html):**
   - **HTML:**
     - Investigar y diseñar la estructura HTML para un formulario de contacto.
     - Garantizar una mejor experiencia de usuario incorporando redirección después del envío del formulario
@@ -91,7 +91,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Estilos adaptativos que coinciden con el tema general.
     - Pseudo-clases y pseudo-elementos para navegación interactiva.
 
-- **Formulario de contacto(contact.html):**
+- **Página de Contacto (contact.html):**
   - HTML:
     - Información del proyecto organizada con etiquetas semánticas.
     - Una tabla con características o estadísticas del proyecto.
@@ -100,7 +100,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Estilos cohesivos con un diseño fluido.
     - Media queries para legibilidad en diferentes dispositivos.
 
-- **Formulario de suscripción(index.html):**
+- *** Formulario suscripción(index.html):**
   - HTML:
     - Crear un formulario de suscripción con una casilla para aceptar los términos de privacidad y política.
   - CSS:
