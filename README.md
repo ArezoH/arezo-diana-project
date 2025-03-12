@@ -157,5 +157,5 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 ---
 
 **Colaboradores:**
-- **Diana** - HTML y CSS para la Página de Inicio y Sobre Nosotros Y Añadir js en estos paginas.
-- **Arezo** - HTML y CSS para la Página de Contacto, Página de Destinos y Documentación y añadir javascript en pagina de destinos y contacto.
+- **Diana** - HTML y CSS para la Página de Inicio y Sobre Nosotros Y Añadir js.
+- **Arezo** - HTML y CSS para la Página de Contacto, Página de Destinos y Documentación y añadir javascript 
