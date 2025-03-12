@@ -80,10 +80,10 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Colores suaves y combinaciones contrastantes.
     
 
-    **Añadir javascript(about.html, inicio):**
+    **Añadir javascript(todos paginas):**
 
-    - .
-    - 
+    - Craer un tema oscuro y aplicar lo en toso los paginas 
+    - el color del button en efecto del mouse
  
 ### **Arezo**
 - **Página de Destinos (destination.html):**
@@ -146,6 +146,11 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 ### Javascript
 ![Página destino](img/image.png)
 ![Página contacto](img/image1.png)
+
+![Tema oscuro](img/image2.png)
+![Color elbutton](img/image3.png)
+
+
 ---
 
 **Colaboradores:**
