@@ -31,6 +31,51 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+//MODO OSCURO:  Crear un botón o interruptor que permita alternar entre un modo claro y un modo oscuro para la web. 
+
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+const body =document.body;
+
+if (localStorage.getItem('darkMode') === "enabled"){
+    body.classList.add('dark-mode');
+    darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+}
+
+darkModeToggle.addEventListener('click', () =>{
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')){
+        localStorage.setItem('darkMode', 'enabled');
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }else{
+        localStorage.setItem('darkMode', 'disabled');
+        darkModeToggle.innerHTML= '<i class="fas fa-moon"></i>';
+    }
+});
+
+
+//Cambiar dinámicamente el estilo de un elemento al interactuar con él
+document.addEventListener("DOMContentLoaded", function(){
+    //Seleccionamos los elementos
+
+    const boton = document.getElementById("boton");
+    const parrafo = document.getElementById("parrafo");
+
+    //evento para cambiar el color del boton al pasar el mouse
+
+    boton.addEventListener("mouseover", function(){
+        boton.style.background ="rgb(255, 153, 0)";
+    });
+
+    boton.addEventListener("mouseout", function(){
+        boton.style.backgroundColor = "black";
+    });
+
+
+});
+
+//Mostrar imágenes en miniatura que al hacer clic se amplíen.
 
 document.querySelectorAll('.destination img').forEach(img => {
     img.onclick = () => {
