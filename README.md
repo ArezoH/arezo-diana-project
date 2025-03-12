@@ -112,13 +112,43 @@ El proyecto está organizado con la siguiente estructura de carpetas:
   - Markdown:
     - Actualizar documentacion.
    
-- **Añadir javascript (contact.html y destinos.html):**
-  - contact :
-    - Crear validacion de javascript.
-  - Destinos:
-    - Crear un filtro con javascript para filterar los paises.
-  - Markdown:
-    - Actualizar documentacion.
+- **Añadir javascript: Documentación de las funcionalidades implementadas**
+
+### 1️⃣ Estructura de datos en JavaScript
+- Se ha definido un **array de objetos** relacionado con la temática de la web.
+- Cada objeto contiene:
+  - Un **identificador único**.
+  - Un **nombre o título**.
+  - Una **descripción breve**.
+  - Un **dato numérico relevante** (precio, puntuación, visitas, cantidad disponible, etc.).
+- Funciones desarrolladas:
+  - **Filtrar** elementos según un criterio específico.
+  - **Ordenar** elementos por nombre o por valor numérico.
+
+### 2️⃣ Efecto de mostrar/ocultar elementos
+- Implementación de un **efecto visual** que permite alternar la visibilidad de un elemento.
+
+### 3️⃣ Modo claro/oscuro 🌗
+- Se ha agregado un **botón interruptor** para alternar entre **modo claro y oscuro**.
+
+### 4️⃣ Gestión de comentarios dinámicos 💬
+- Un **botón permite mostrar** la lista de comentarios.
+- Los comentarios enviados mediante el formulario se **añaden dinámicamente** a la web.
+
+### 5️⃣ Interacciones dinámicas con estilos 🎨
+- Cambio de estilos al interactuar con elementos:
+  - **Color de fondo** de botones al pasar el ratón.
+  - **Resaltar párrafos** al hacer clic.
+
+### 6️⃣ Carrusel de imágenes o textos 🎞️
+- Implementación de un **slider/carrusel** con desplazamiento automático o manual mediante botones.
+
+### 7️⃣ Galería de imágenes con ampliación 🖼️
+- **Las imágenes en miniatura** pueden ampliarse al hacer clic en ellas.
+
+### 8️⃣ Validación de formularios ✅
+- Se ha desarrollado una **validación con JavaScript** para los campos del formulario antes de su envío.
+
 ---
 
 ## Capturas de Pantalla
