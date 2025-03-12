@@ -150,7 +150,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 - Se ha desarrollado una **validación con JavaScript** para los campos del formulario antes de su envío.
 
 **9. Actualizar "README.MD".**
-- Arezo y Diana
+- Arezo y Diana has redactado parte de la documentacion del proyecto.
 ---
 
 ## Capturas de Pantalla
