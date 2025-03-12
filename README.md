@@ -148,7 +148,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 ![Página contacto](img/image1.png)
 
 ![Tema oscuro](img/image2.png)
-![Color elbutton](img/image3.png)
+![Color el button](img/image3.png)
 
 
 ---
