@@ -111,10 +111,10 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Diseñarlo y adaptar los colores para mantener la coherencia en el diseño.
   - Markdown:
     - Actualizar documentacion.
-   
-- **Añadir javascript: Documentación de las funcionalidades implementadas**
 
-### 1️.Estructura de datos en JavaScript
+### Añadir javascript: Documentación de las funcionalidades implementadas
+
+- **1️.Estructura de datos en JavaScript**
 - Se ha definido un **array de objetos** relacionado con la temática de la web.
 - Cada objeto contiene:
   - Un **identificador único**.
