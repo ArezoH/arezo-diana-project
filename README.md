@@ -128,7 +128,7 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 **Arezo (1.5h) - 2️. Efecto de mostrar/ocultar elementos**
 - Implementación de un **efecto visual** que permite alternar la visibilidad de un elemento.
 
-**Diana (2.5h) - 3️.Modo claro/oscuro 🌗**
+**Diana (3.5h) - 3️.Modo claro/oscuro 🌗**
 - Se ha agregado un **botón interruptor** para alternar entre **modo claro y oscuro**.
 
 **Arezo (1h) - 4️. Gestión de comentarios dinámicos 💬**
