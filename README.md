@@ -149,6 +149,9 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 
 ![Tema oscuro](img/image2.png)
 ![Color el button](img/image3.png)
+![Mostrar imágenes](img/image4.png)
+![lugar de elementos genéricos](img/image5.png)
+
 
 
 ---
