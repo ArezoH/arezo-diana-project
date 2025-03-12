@@ -80,6 +80,10 @@ El proyecto está organizado con la siguiente estructura de carpetas:
     - Colores suaves y combinaciones contrastantes.
     
 
+    **Añadir javascript(about.html, inicio):**
+
+    - .
+    - 
  
 ### **Arezo**
 - **Página de Destinos (destination.html):**
@@ -108,7 +112,13 @@ El proyecto está organizado con la siguiente estructura de carpetas:
   - Markdown:
     - Actualizar documentacion.
    
-
+- **Añadir javascript (contact.html y destinos.html):**
+  - contact :
+    - Crear validacion de javascript.
+  - Destinos:
+    - Crear un filtro con javascript para filterar los paises.
+  - Markdown:
+    - Actualizar documentacion.
 ---
 
 ## Capturas de Pantalla
@@ -132,8 +142,12 @@ El proyecto está organizado con la siguiente estructura de carpetas:
 
 ### Formulario de subscripción
 ![Página incio](img/Subscription.png)
+
+### Javascript
+![Página destino](img/image.png)
+![Página contacto](img/image1.png)
 ---
 
 **Colaboradores:**
-- **Diana** - HTML y CSS para la Página de Inicio y Sobre Nosotros
-- **Arezo** - HTML y CSS para la Página de Contacto, Página de Destinos y Documentación
+- **Diana** - HTML y CSS para la Página de Inicio y Sobre Nosotros Y Añadir js en estos paginas.
+- **Arezo** - HTML y CSS para la Página de Contacto, Página de Destinos y Documentación y añadir javascript en pagina de destinos y contacto.

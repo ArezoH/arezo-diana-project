@@ -751,3 +751,31 @@ footer p {
     color: #000000; /* Color del texto en el pie de página */
     font-size: 0.9em; /* Tamaño de la fuente */
 }
+ /* MODO OSCURO */
+ body.dark-mode{
+  --primary-color: #222;
+  --secondary-color: #ddd;
+  --bg-gradient: linear-gradient(135deg, #121212, #333);
+  background: var(--bg-gradient);
+  color: var(--secondary-color);
+}
+
+body.dark-mode * {
+  color: var(--secondary-color) !important;
+}
+
+/* BOTON MODO OSCURO */
+
+.dark-mode-btn{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.dark-mode-btn:hover{
+  color: #ffd700;
+}

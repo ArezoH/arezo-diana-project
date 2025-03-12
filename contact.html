@@ -16,7 +16,10 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo font-effect-fire-animation"><a href="index.html">Go Trip</a></div>
+            <div class="logo font-effect-fire-animation"><a href="index.html">Go Trip</a>
+                <button class="dark-mode-btn" id="darkModeToggle">
+                    <i class="fas fa-moon"></i>
+                </button></div>
             <!-- Menú Toggle -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="hamburger">&#9776;</label>
@@ -94,3 +97,42 @@
     </footer>
 </body>
 </html>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Validation
+        if (name === "" || email === "" || message === "") {
+            alert("Por favor, completa todos los campos.");
+            return;
+        }
+
+        if (!validateEmail(email)) {
+            alert("Por favor, introduce un correo electrónico válido.");
+            return;
+        }
+
+        // Success message
+        alert("¡Mensaje enviado con éxito!");
+
+        // Reset form
+        form.reset();
+    });
+
+    // Email validation function
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+});
+</script>
+<script src="modo_oscuro.js"></script>
+<script src="parte5.js"></script>
+

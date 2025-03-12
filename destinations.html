@@ -15,7 +15,11 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo font-effect-fire-animation"><a href="index.html">Go Trip</a></div>
+            <div class="logo font-effect-fire-animation"><a href="index.html">Go Trip</a>  
+                <button class="dark-mode-btn" 
+                id="darkModeToggle">
+                <i class="fas fa-moon"></i>
+            </button></div>
             <!-- Menú Toggle -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="hamburger">&#9776;</label>
@@ -34,7 +38,7 @@
             <p>Descubre las mejores opciones para disfrutar de tus viajes. Ofrecemos experiencias excepcionales para ti y tu familia, conectándote con los mejores servicios en tus destinos deseados. Como nuestro cliente, también podrás disfrutar de descuentos exclusivos.</p>
         </section>
         <section class="destinations">
-            <div class="destination" id="zurich">
+            <div class="destination zurich" id="zurich">
                 <img src="https://d3dqioy2sca31t.cloudfront.net/Projects/cms/production/000/033/341/original/5c472d66a697be01bc22961ddb4a8241/slide-switzerland-zuerich-dusk.jpg" alt="Zúrich, Suiza">
                 <div class="destination-info">
                     <h2>Zúrich, Suiza</h2>
@@ -100,3 +104,56 @@
     </main>
 </body>
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scrolling for the back-to-top button
+        const scrollToTopBtn = document.querySelector(".flecha-arriba");
+        
+        if (scrollToTopBtn) {
+            scrollToTopBtn.addEventListener("click", function (event) {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        }
+    
+        // Mobile menu toggle
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+    
+        menuToggle.addEventListener("change", function () {
+            navLinks.style.display = this.checked ? "block" : "none";
+        });
+    
+        // Destination filtering
+        const destinations = document.querySelectorAll(".destination");
+    
+        function filterDestinations(country) {
+            destinations.forEach(dest => {
+                dest.style.display = dest.classList.contains(country) || country === "all" ? "block" : "none";
+            });
+        }
+    
+        // Example: Add a dropdown filter
+        const filterContainer = document.createElement("div");
+        filterContainer.innerHTML = `
+            <label for="destination-filter">Filtrar por país:</label>
+            <select id="destination-filter">
+                <option value="all">Todos</option>
+                <option value="france">Francia</option>
+                <option value="uk">Reino Unido isla</option>
+                <option value="italy">Italia</option>
+                <option value="zurich">Suiza</option>
+                 <option value="london">London</option>
+            </select>
+        `;
+        document.querySelector(".destinations").prepend(filterContainer);
+    
+        document.getElementById("destination-filter").addEventListener("change", function () {
+            filterDestinations(this.value);
+        });
+    });
+    </script>
+    <script src="modo_oscuro.js"></script>
+    <script src="parte5.js"></script>
+    
